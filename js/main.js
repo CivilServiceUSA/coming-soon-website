@@ -12,6 +12,8 @@
       overlay: false
     });
 
+    $('video').attr('webkit-playsinline', '');
+
     setTimeout(function () {
       $('#preloader').velocity({
         opacity: "0",
