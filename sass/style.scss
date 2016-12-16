@@ -90,6 +90,11 @@ html, body {
   overflow: hidden;
 }
 
+.vidbg-container {
+  position: static;
+  background-position: top center;
+}
+
 /* ------------------------------------- */
 /* Preloader styles .................... */
 /* ------------------------------------- */
@@ -463,6 +468,7 @@ sup {
   height: 100%;
   opacity: 0;
   @include bezier-transition(all, $medium-transition, cubic-bezier(0, 0, 0.58, 1));
+  -webkit-overflow-scrolling: touch;
 
   .content {
     position: absolute;
