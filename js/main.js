@@ -12,8 +12,6 @@
       overlay: false
     });
 
-    $('video').attr('webkit-playsinline', '');
-
     setTimeout(function () {
       $('#preloader').velocity({
         opacity: "0",
@@ -24,6 +22,10 @@
           });
         }
       });
+
+      if($('video').length){
+        $('video').attr('webkit-playsinline', '');
+      }
     }, 10);
 
     setTimeout(function () {
